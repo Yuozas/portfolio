@@ -11,8 +11,8 @@ import {
     Icon,
     useColorModeValue,
 } from '@chakra-ui/react';
-import { FaEnvelope, FaPhone, FaBirthdayCake, FaMapMarkerAlt, FaFacebookF, FaYoutube, FaInstagram, FaLanguage } from 'react-icons/fa';
-import {InfoItem, LanguageSkill, SkillCard, SocialIcon} from "../components/Home";
+import { FaEnvelope, FaPhone, FaBirthdayCake, FaMapMarkerAlt, FaLanguage } from 'react-icons/fa';
+import {InfoItem, LanguageSkill, SkillCard, SocialIcons} from "../components/Home";
 import AboutMe from "../components/Home/AboutMe.tsx";
 
 const Home: React.FC = () => {
@@ -52,11 +52,7 @@ const Home: React.FC = () => {
                             <InfoItem icon={FaBirthdayCake} text="August 11, 1998" />
                             <InfoItem icon={FaMapMarkerAlt} text="Vilnius, Lithuania" />
                         </VStack>
-                        <Flex justify="center" gap={4}>
-                            <SocialIcon icon={FaFacebookF} />
-                            <SocialIcon icon={FaYoutube} />
-                            <SocialIcon icon={FaInstagram} />
-                        </Flex>
+                        <SocialIcons />
 
                         <Box mt={6}>
                             <Heading as="h3" size="md" mb={4}>
