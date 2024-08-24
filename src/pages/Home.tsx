@@ -36,7 +36,7 @@ const Home: React.FC = () => {
                         <Image
                             borderRadius="full"
                             boxSize="150px"
-                            src="/profile-pic.jpg"
+                            src="/portfolio/profile-pic.jpg"
                             alt="Juozas Žilys"
                             mx="auto"
                         />

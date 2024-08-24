@@ -8,11 +8,11 @@ const App: React.FC = () => {
         <Router>
             <MainLayout>
                 <Routes>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/work-experience" element={<WorkExperiencePage />} />
-                    <Route path="/education" element={<Education />} />
-                    <Route path="/skills" element={<Skills />} />
-                    <Route path="/projects" element={<ProjectsPage />} />
+                    <Route path="/portfolio" element={<Home />} />
+                    <Route path="/portfolio/work-experience" element={<WorkExperiencePage />} />
+                    <Route path="/portfolio/education" element={<Education />} />
+                    <Route path="/portfolio/skills" element={<Skills />} />
+                    <Route path="/portfolio/projects" element={<ProjectsPage />} />
                 </Routes>
             </MainLayout>
         </Router>

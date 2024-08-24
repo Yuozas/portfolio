@@ -67,13 +67,13 @@ const ProjectsPage: React.FC = () => {
                                     title="Kaberei Warrior ⚔"
                                     description="This is a 2D RPG platformer Unity Demo Game I created as a 3rd-year student. It has some unpolished features like getting stuck in walls when pressed to move, mobs dying oddly, and a buggy boss. The landing and jumping mechanics were intentionally made uncomfortable to represent a more realistic approach to jumping, with an uncomfortable delay. This game feels clunky and served as a good lesson that realism doesn't always equate to fun gameplay. There's a similar jumping concept in Jump King, which I wasn't aware of at the time, and it's equally, if not more, frustrating."
                                     embed={<GitHubRepoCard repo="Yuozas/Kaberei-Warrior" />}
-                                    build="builds/unity-builds/Kaberei Warrior.zip"
+                                    build="/portfolio/builds/unity-builds/Kaberei Warrior.zip"
                                 />
                                 <Project
                                     title="Agent Classified 🔫😎"
                                     description="This is a 2D top-down bullet dodge Demo Game that I created as a student."
                                     embed={<GitHubRepoCard repo="Yuozas/Agent-Classified" />}
-                                    build="builds/unity-builds/Agent Classified.zip"
+                                    build="/portfolio/builds/unity-builds/Agent Classified.zip"
                                 />
                                 <Project
                                     title="Unity Multiplayer Horror Game 😨👻😱 (Latest)"
@@ -168,12 +168,12 @@ const ProjectsPage: React.FC = () => {
                                 <Project
                                     title="Skull 💀"
                                     description="I sculpted this skull in ZBrush during my student days."
-                                    embed={<ModelViewer modelUrl="3d-models/Kaukule_Higher poly.glb" />}
+                                    embed={<ModelViewer modelUrl="/portfolio/3d-models/Kaukule_Higher poly.glb" />}
                                 />
                                 <Project
                                     title="Dark Souls 3 Dark Knight Great Axe 🪓"
                                     description="I modeled this in Autodesk Maya during my student days."
-                                    embed={<ModelViewer modelUrl="3d-models/Black_Knight_Great_Axe_for_ZBrush_normal_poly.glb" />}
+                                    embed={<ModelViewer modelUrl="/portfolio/3d-models/Black_Knight_Great_Axe_for_ZBrush_normal_poly.glb" />}
                                 />
                                 {/* Add more 3D model projects */}
                             </SimpleGrid>
@@ -288,17 +288,17 @@ const ProjectsPage: React.FC = () => {
                                 <Project
                                     title="Skull Sketch 💀"
                                     description="My digital still life sketch I created in Photoshop using my graphics tablet."
-                                    embed={<ArtworkGallery images={[{ src: "drawings/4K SKULL N STUFF.png", alt: "Skull" }]}/>}
+                                    embed={<ArtworkGallery images={[{ src: "/portfolio/drawings/4K SKULL N STUFF.png", alt: "Skull" }]}/>}
                                 />
                                 <Project
                                     title="Elf Girl with Fairies 🧚‍♀️🧝‍♀️"
                                     description="A digital art piece I created in Photoshop using my graphics tablet. It's very much unfinished, but it's still nice."
-                                    embed={<ArtworkGallery images={[{ src: "drawings/Elf_Girl_makeup_3.png", alt: "Elf Girl" }]}/>}
+                                    embed={<ArtworkGallery images={[{ src: "/portfolio/drawings/Elf_Girl_makeup_3.png", alt: "Elf Girl" }]}/>}
                                 />
                                 <Project
                                     title="Chibi Girl Sketch 👧"
                                     description="A digital art sketch I created in Photoshop using my graphics tablet. I love sketching anime 🥰."
-                                    embed={<ArtworkGallery images={[{ src: "drawings/day_1 manga character.png", alt: "Chibi Girl" }]}/>}
+                                    embed={<ArtworkGallery images={[{ src: "/portfolio/drawings/day_1 manga character.png", alt: "Chibi Girl" }]}/>}
                                 />
                                 <Project
                                     title="My Pixel Art Collection 🎮🎨"
@@ -306,10 +306,10 @@ const ProjectsPage: React.FC = () => {
                                     embed={
                                         <ArtworkGallery
                                             images={[
-                                                { src: "drawings/pixel-art/MePlayingWithChar.gif", alt: "Char GIF" },
-                                                { src: "drawings/pixel-art/SizeTest.png", alt: "Size Test" },
-                                                { src: "drawings/pixel-art/Astronautas PixelArt Wallpaper.png", alt: "Astronaut" },
-                                                { src: "drawings/pixel-art/Yuzo 160x160.png", alt: "Yuzo" },
+                                                { src: "/portfolio/drawings/pixel-art/MePlayingWithChar.gif", alt: "Char GIF" },
+                                                { src: "/portfolio/drawings/pixel-art/SizeTest.png", alt: "Size Test" },
+                                                { src: "/portfolio/drawings/pixel-art/Astronautas PixelArt Wallpaper.png", alt: "Astronaut" },
+                                                { src: "/portfolio/drawings/pixel-art/Yuzo 160x160.png", alt: "Yuzo" },
                                             ]}
                                         />
                                     }
@@ -320,9 +320,9 @@ const ProjectsPage: React.FC = () => {
                                     embed={
                                         <ArtworkGallery
                                             images={[
-                                                { src: "drawings/cat-girl/cat girl on phone censored.png", alt: "Cat girl Phone" },
-                                                { src: "drawings/cat-girl/cat girl pc censored.png", alt: "Cat girl PC" },
-                                                { src: "drawings/cat-girl/cat girl pc face.png", alt: "Cat girl PC face" },
+                                                { src: "/portfolio/drawings/cat-girl/cat girl on phone censored.png", alt: "Cat girl Phone" },
+                                                { src: "/portfolio/drawings/cat-girl/cat girl pc censored.png", alt: "Cat girl PC" },
+                                                { src: "/portfolio/drawings/cat-girl/cat girl pc face.png", alt: "Cat girl PC face" },
                                             ]}
                                         />
                                     }
@@ -333,9 +333,9 @@ const ProjectsPage: React.FC = () => {
                                     embed={
                                         <ArtworkGallery
                                             images={[
-                                                { src: "drawings/digital-sketch-collection/Art_Gallery_Day_1_Sketch.png", alt: "Art Gallery" },
-                                                { src: "drawings/digital-sketch-collection/Resting_Sketch_Day_1.png", alt: "Resting Sketch" },
-                                                { src: "drawings/digital-sketch-collection/Warmup_3.png", alt: "Warmup" },
+                                                { src: "/portfolio/drawings/digital-sketch-collection/Art_Gallery_Day_1_Sketch.png", alt: "Art Gallery" },
+                                                { src: "/portfolio/drawings/digital-sketch-collection/Resting_Sketch_Day_1.png", alt: "Resting Sketch" },
+                                                { src: "/portfolio/drawings/digital-sketch-collection/Warmup_3.png", alt: "Warmup" },
                                             ]}
                                         />
                                     }
@@ -346,9 +346,9 @@ const ProjectsPage: React.FC = () => {
                                     embed={
                                         <ArtworkGallery
                                             images={[
-                                                { src: "drawings/old-digital-collection/as-creepy.png", alt: "Me Creepy" },
-                                                { src: "drawings/old-digital-collection/asChibi.png", alt: "Me Chibi" },
-                                                { src: "drawings/old-digital-collection/Chibi.png", alt: "Chibi Girl" },
+                                                { src: "/portfolio/drawings/old-digital-collection/as-creepy.png", alt: "Me Creepy" },
+                                                { src: "/portfolio/drawings/old-digital-collection/asChibi.png", alt: "Me Chibi" },
+                                                { src: "/portfolio/drawings/old-digital-collection/Chibi.png", alt: "Chibi Girl" },
                                             ]}
                                         />
                                     }
@@ -359,19 +359,19 @@ const ProjectsPage: React.FC = () => {
                                     embed={
                                         <ArtworkGallery
                                             images={[
-                                                { src: "drawings/irl-school-year-drawings/20240109_042232.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042340.jpg", alt: "" },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042349.jpg", alt: "", rotation: 90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042352.jpg", alt: "", rotation: 90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042400.jpg", alt: "", rotation: 90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042444.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042447.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_042455.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_045824.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_050239.jpg", alt: "", rotation: -90 },
-                                                { src: "drawings/irl-school-year-drawings/20240109_050245.jpg", alt: "" },
-                                                { src: "drawings/irl-school-year-drawings/20240109_050251.jpg", alt: "" },
-                                                { src: "drawings/irl-school-year-drawings/20240109_050301.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042232.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042340.jpg", alt: "" },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042349.jpg", alt: "", rotation: 90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042352.jpg", alt: "", rotation: 90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042400.jpg", alt: "", rotation: 90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042444.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042447.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_042455.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_045824.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_050239.jpg", alt: "", rotation: -90 },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_050245.jpg", alt: "" },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_050251.jpg", alt: "" },
+                                                { src: "/portfolio/drawings/irl-school-year-drawings/20240109_050301.jpg", alt: "", rotation: -90 },
                                             ]}
                                         />
                                     }

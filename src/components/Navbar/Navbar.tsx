@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
                 <HStack spacing={8} alignItems={'center'}>
                     <Box fontWeight="bold">Juozas Žilys</Box>
                     <HStack as={'nav'} spacing={4} display={{ base: 'none', md: 'flex' }}>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/work-experience">Work Experience</NavLink>
-                        <NavLink to="/education">Education</NavLink>
-                        <NavLink to="/skills">Skills</NavLink>
-                        <NavLink to="/projects">Projects</NavLink>
+                        <NavLink to="/portfolio/">Home</NavLink>
+                        <NavLink to="/portfolio/work-experience">Work Experience</NavLink>
+                        <NavLink to="/portfolio/education">Education</NavLink>
+                        <NavLink to="/portfolio/skills">Skills</NavLink>
+                        <NavLink to="/portfolio/projects">Projects</NavLink>
                     </HStack>
                 </HStack>
                 <Flex alignItems={'center'}>
@@ -47,11 +47,11 @@ const Navbar: React.FC = () => {
             {isOpen ? (
                 <Box pb={4} display={{ md: 'none' }}>
                     <Stack as={'nav'} spacing={4}>
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/work-experience">Work Experience</NavLink>
-                        <NavLink to="/education">Education</NavLink>
-                        <NavLink to="/skills">Skills</NavLink>
-                        <NavLink to="/projects">Projects</NavLink>
+                        <NavLink to="/portfolio/">Home</NavLink>
+                        <NavLink to="/portfolio/work-experience">Work Experience</NavLink>
+                        <NavLink to="/portfolio/education">Education</NavLink>
+                        <NavLink to="/portfolio/skills">Skills</NavLink>
+                        <NavLink to="/portfolio/projects">Projects</NavLink>
                     </Stack>
                 </Box>
             ) : null}
