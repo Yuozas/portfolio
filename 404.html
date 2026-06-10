@@ -1,27 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>React Router</title>
-    <script type="text/javascript">
-        const pathSegmentsToKeep = 1;
-
-        const l = window.location;
-        l.replace(
-            l.protocol +
-            "//" +
-            l.hostname +
-            (l.port ? ":" + l.port : "") +
-            l.pathname
-                .split("/")
-                .slice(0, 1 + pathSegmentsToKeep)
-                .join("/") +
-            "/?/" +
-            l.pathname.slice(1).split("/").slice(pathSegmentsToKeep).join("/").replace(/&/g, "~and~") +
-            (l.search ? "&" + l.search.slice(1).replace(/&/g, "~and~") : "") +
-            l.hash
-        );
-    </script>
-</head>
-<body></body>
-</html>
+<!DOCTYPE html><html lang="en"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Page not found."><meta name="generator" content="Astro v5.18.1"><link rel="icon" type="image/png" href="/favicon.png"><link rel="apple-touch-icon" href="/favicon.png"><link rel="canonical" href="https://portfolio.euphelia.eu/404/"><title>404 — Juozas Žilys</title><!-- Open Graph --><meta property="og:type" content="website"><meta property="og:site_name" content="Juozas Žilys"><meta property="og:title" content="404 — Juozas Žilys"><meta property="og:description" content="Page not found."><meta property="og:url" content="https://portfolio.euphelia.eu/404/"><meta property="og:image" content="https://portfolio.euphelia.eu/og/home.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="404 — Juozas Žilys"><!-- Twitter / X --><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="404 — Juozas Žilys"><meta name="twitter:description" content="Page not found."><meta name="twitter:image" content="https://portfolio.euphelia.eu/og/home.png"><!-- Structured data: who this person is, for search engines --><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Juozas Žilys","jobTitle":"Senior Full-Stack Engineer","address":{"@type":"PostalAddress","addressLocality":"Vilnius","addressCountry":"LT"},"url":"https://portfolio.euphelia.eu/","sameAs":["https://github.com/Yuozas","https://www.linkedin.com/in/juozas-zilys/","https://im-yuzo.itch.io/"],"knowsAbout":[".NET","C#","React","TypeScript","Rust","WebAssembly","Game Development"]}</script><script>
+      // Restore vibe mode before first paint (no FOUC).
+      // ~140 bytes — only sets a data attribute; vibe.css is loaded later
+      // by the dynamic import inside VibePill's client script.
+      try {
+        if (
+          localStorage.getItem("mode") === "vibe" ||
+          /[?&]vibe=1\b/.test(location.search)
+        ) {
+          document.documentElement.dataset.mode = "vibe";
+        }
+      } catch (e) {}
+    </script><link rel="stylesheet" href="/_astro/about.CEgfu62H.css"></head> <body class="min-h-screen"> <a href="#main-content" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:rounded focus:bg-neutral-900 focus:px-3 focus:py-2 focus:text-sm focus:text-white">Skip to content</a> <header class="sticky top-0 z-50 border-b border-neutral-200/80 bg-neutral-50/80 backdrop-blur dark:border-neutral-800/80 dark:bg-neutral-950/80"> <div class="mx-auto flex max-w-3xl items-center gap-4 px-6 py-3 sm:px-8 justify-between"> <a href="/" class="text-sm font-semibold tracking-tight hover:text-neutral-600 dark:hover:text-neutral-300">
+Juozas Žilys
+</a> <nav class="flex items-center gap-3 sm:gap-5"> <ul class="flex items-center gap-3 text-sm sm:gap-5"> <li> <a href="/projects" class="transition-colors text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"> Projects </a> </li><li> <a href="/cv" class="transition-colors text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"> CV </a> </li><li> <a href="/creative" class="transition-colors text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"> Creative </a> </li><li> <a href="/about" class="transition-colors text-neutral-500 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-neutral-100"> About </a> </li> </ul> <span class="hidden h-4 w-px bg-neutral-200 dark:bg-neutral-800 sm:block" aria-hidden="true"></span> <button id="vibe-toggle" type="button" title="Motion and sound ahead" class="rounded-full border border-neutral-300 px-3 py-1 text-xs font-medium tracking-wide transition-colors hover:border-neutral-500 dark:border-neutral-700 dark:hover:border-neutral-500">
+Take the pill
+</button> <script type="module" src="/_astro/VibePill.astro_astro_type_script_index_0_lang.pym4NrPM.js"></script> </nav> </div> </header> <div id="main-content">  <main class="mx-auto flex max-w-3xl flex-col items-center px-6 py-24 text-center sm:py-32"> <img src="/_astro/yuzo.C9hTaVxd_1VNWWS.webp" alt="Pixel-art Yuzo, looking unbothered" style="image-rendering: pixelated;" loading="lazy" decoding="async" fetchpriority="auto" width="160" height="160" class="h-28 w-28 sm:h-36 sm:w-36"> <h1 class="mt-8 font-mono text-5xl font-bold tracking-tight sm:text-6xl">404</h1> <p class="mt-4 max-w-md text-base text-neutral-700 dark:text-neutral-300">
+You found a page that doesn't exist. The 2020 version of me would have put a sticky note here.
+</p> <p class="mt-8"> <a href="/" class="rounded-full border border-neutral-300 px-5 py-2 text-sm font-medium transition-colors hover:border-neutral-500 dark:border-neutral-700 dark:hover:border-neutral-500">Take me home</a> </p> <p class="mt-4 text-xs text-neutral-500">
+or <a href="/2020/index.html" class="underline underline-offset-2 hover:text-neutral-900 dark:hover:text-neutral-100">get really lost</a> </p> </main>  </div> </body></html>

@@ -1,0 +1,751 @@
+html,body{height: 100%;width: 100%;}
+body{
+	background-image: url("../IMG/pattern1.jpg");
+	background-repeat: repeat; /* Do not repeat the image */
+}
+.block{
+	min-width: 1366px;
+	min-height:768px;
+	max-width: 1366px;
+	max-height:768px;
+	margin:auto;
+}
+.shadow1{
+	box-shadow: 0 0 10px;
+}
+/*===========Navigation Bar==============*/
+.noselect {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+.navigator {
+	font-family: 'Righteous', cursive;
+  position: fixed;
+  height: 50px;
+  width: 50px;
+  top: 50px;
+  right: 5px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: 
+  background-color: rgb(255,255,255);
+  
+  background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(191,191,191,1) 46%, rgba(129,129,129,1) 62%, rgba(1,1,1,1) 100%);
+  
+      box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border:-2px solid rgba(0,0,0,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  z-index: 1000;
+  text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;
+
+}
+.navigator::after{
+	content: "";
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/55/Magnifying_glass_icon.svg); /* fallback */
+  stroke: white;
+  border-radius: 25px;
+  background-size: 60%;
+    background-repeat: no-repeat;
+  background-position: center; 
+  border:4px solid black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.navigator:hover::after{
+  border-radius: 35px;
+}
+
+.navigator.nSel:hover {
+  height: 70px;
+  width: 70px;
+  border-radius: 35px;
+}
+
+.navigator a {
+  color: black;
+  text-decoration: none;
+  /* no underline */
+}
+
+.navigator .smallerBall {
+  position: absolute;
+  height: 70px;
+  width: 80px;
+  border-radius: 40px/35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255,255,255);
+  background-image: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(228,228,228,1) 40%, rgba(191,191,191,1) 54%, rgba(129,129,129,1) 70%, rgba(89,89,89,1) 85%, rgba(1,1,1,1) 100%);
+  border:2px solid rgba(0,0,0,0.2);
+  -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  text-align: center;
+  font-size: 10px;
+  line-height: 12px;
+  z-index: 1000;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+.navigator .smallerBall::after{
+  content: "";
+  border-radius: 40px/35px;
+  border:4px solid black;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;  
+}
+.navigator .smallerBall:hover::after{
+	border-radius: 60px;
+}
+
+.navigator .smallerBall:hover {
+  height: 120px;
+  width: 120px;
+  border-radius: 60px;
+  font-size: 18px;
+  line-height: 20px;
+  z-index: 1050;
+}
+
+.navigator .navTop {
+  right: 50px;
+  bottom: -50px;
+}
+
+.navigator .aboutMe {
+  right: 75px;
+  bottom: -130px;
+}
+
+.navigator .pKnowledge {
+  right: 90px;
+  bottom: -210px;
+}
+
+.navigator .mKnowledge {
+  right: 75px;
+  bottom: -290px;
+}
+
+.navigator .navProjects {
+  right: 50px;
+  bottom: -370px;
+}
+/*===========Navigation Bar==============*/
+/*================First Block====================*/
+#top{
+	display:flex;
+	align-items: center;
+    justify-content: center;
+	background-image: url("../IMG/bg1.jpg"); /* The image used */
+	height: 100%; /* You must set a specified height */
+	background-position: center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+}
+#as{
+	width: 288px;
+	height: 288px;
+	background-image: url("../IMG/as.png"); /* The image used */
+	background-color: rgba(255,255,255,0.4); /* Used if the image is unavailable */
+	background-position: center center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover; /* Resize the background image to cover the entire container */
+	display: flex;
+	justify-content:center;
+	align-items:center;
+
+}
+#as span{
+	font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;
+ 	font-size: 79.17px;
+ 	line-height: 50px;
+ 	color: white;
+ 	text-shadow: 2px 2px 5px black;
+	text-align:center;
+	white-space:nowrap;
+	position:relative;
+  	align-self: flex-end;
+}
+/*================First Block====================*/
+/*================Second Block====================*/
+.about{
+	background-image: url("../IMG/note16x9.jpg");
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 55.5px;
+	font-family: 'Gochi Hand', cursive;
+	color:rgb(55,56,49);
+	position: relative;
+}
+.about h1,.about p,.about li{
+	margin:0;
+	margin-left: 115px;
+	text-indent: 50px;
+	margin-right:5px;
+}
+.about h1{
+	font-size: 102.17px;
+}
+.about p, li{
+	font-size: 35px;
+}
+.about p.aboutP{
+	font-size: 30px;
+}
+.about img#pencil{
+	position: absolute;
+	width: 500px;
+	transform: perspective(500px) rotateX(-20deg) rotateY(-20deg);
+	z-index: 999;
+	right: 40px;
+	bottom: 77px;
+}
+.about img#stickyNote{
+	position: absolute;
+	width: 250px;
+	bottom: 20px;
+	right: 440px;
+	z-index: 2;
+}
+.about #smiley{
+	position:absolute;
+	margin-left: 0px;
+	right: 495px;
+	bottom: 160px;
+	width: 55.5px;
+	font-size: 100px;
+	transform: rotate(90deg);
+	z-index: 100;
+}
+
+.about .metalRings{
+	position:absolute;
+	bottom: -19.5px;
+	right: 3px;
+	z-index: 2;
+}
+/*================Second Block====================*/
+/*================Third Block====================*/
+.about2{
+	margin-top:4px;
+	background-image: url("../IMG/note16x9.jpg");
+	height: 100%;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	line-height: 55.5px;
+	font-family: 'Gochi Hand', cursive;
+	color:rgb(55,56,49);
+	position: relative;
+}
+.about2 h1,.about2 p,.about2 li{
+	margin:0;
+	margin-left: 115px;
+	text-indent: 50px;
+	margin-right:5px;
+}
+.about2 h1{
+	font-size: 102.17px;
+}
+.about2 p,.about2 li{
+	font-size: 55.5px;
+}
+.about2 .metalRings{
+	position:absolute;
+	z-index: 2;
+	bottom: -19.5px;
+	right: 3px;
+}
+/*================Third Block====================*/
+div.smaller p{
+	font-size: 25px !important;
+}
+span.score{
+	color:red;
+	text-transform: uppercase;
+}
+span.smallerStart{
+	font-size:30px !important;
+	font-weight: bold;
+}
+/*================Extendable Div Start====================*/
+.exdtendable{
+	min-width: 1366px;
+	min-height:768px;
+	max-width: 1366px;
+	max-height:auto;
+	margin:auto;
+	background-color: whitesmoke;
+	margin-top: 4px;/* for the metal rings*/
+}
+.Knowledge{
+	font-family: Lucida Console,Lucida Sans Typewriter,monaco,Bitstream Vera Sans Mono,monospace;
+}
+.KnowledgeLabel{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-family: 'La Belle Aurore', cursive;
+	font-size: 61.17px;
+	position: relative;
+	padding-top: 100px;
+}
+.KnowledgeLabel div p{
+padding: 0;
+margin:0;
+}
+.KnowledgeLabel div{
+	z-index: 9999;
+}
+.LabelLine{
+	position: absolute;
+	border-bottom: 3px solid black;
+	width: 713.533px;
+	bottom: 65px;
+	z-index: 0 !important;
+}
+.KnowledgeTypeLabel{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	font-size: 38px;
+	margin-top: 150px;
+} 
+.KnowledgeLabel .kl1{margin-top: 40px;margin-right: 15px;}
+.KnowledgeLabel .kl2{padding-right: 25px; margin-top: 20px;}
+.KnowledgeLabel .kl4{padding-left: 25px; margin-top: 20px;}
+.KnowledgeLabel .kl5{margin-top: 40px;margin-left: 15px;}
+
+#binaryImg p{
+	font-size: 13.17px;
+	line-height: 11px;
+	margin:0;
+	padding: 0;
+	letter-spacing: 3px;
+}
+#binaryImg{
+	margin-right: 25px;
+}
+#CLGroup{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	-webkit-flex-wrap: wrap; /* Safari 6.1+ */
+	flex-wrap: wrap;
+}
+#CLGroup .CLBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 15px;
+	line-height: 25px;
+	height: 370px;
+	width: 580px;
+	margin:auto 20px auto 20px;
+	border:4px solid black;
+	margin-bottom: 40px;
+	border-radius:10px;
+	background-color: black;
+	color:green;
+	position: relative;
+	padding-top:30px;/*FOR CMD*/
+}
+#CLGroup .CLBox .CLBoxT{
+	height:30%;
+	display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#CLGroup .CLBox .CLBoxB{height:70%;}
+
+/*===== CLBoxT img auto size==============*/
+#CLGroup .CLBox .images4 img{
+	max-width: calc( (580px / 4) - 40px );
+    height: auto;
+    max-height: calc( (370px * 0.3) - 20px );
+    margin:auto 5px auto 5px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+#CLGroup .CLBox .images3 img{
+	max-width: calc( (580px / 3) - 30px );
+    height: auto;
+    max-height: calc( (370px * 0.3) - 20px );
+    margin:auto 5px auto 5px;
+    float: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+#CLGroup .CLBox .images2 img{
+	max-width: calc( (580px / 2) - 20px );
+    height: auto;
+    max-height: calc( (370px * 0.3) - 20px );
+    margin:auto 5px auto 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+#CLGroup .CLBox .images1 img{
+	max-width: 580px;
+    height: auto;
+    max-height: calc( (370px * 0.3) - 20px );
+    margin:auto 5px auto 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.dropShadow{
+	-webkit-filter: drop-shadow(2px 2px 2px rgba(255,255,255,0.5));
+  	-webkit-filter: drop-shadow(2px 2px 2px rgba(255,255,255,0.5));
+}
+/*===== CLBoxT img correct==============*/
+
+/*=============CMD 4 FUN==========*/
+.CLBox .CMD{
+	position: absolute;
+	width: 586px;
+	top: -5px;
+	background-color: white;
+	height: 30px;
+	border:1px solid black;
+	border-bottom: none;
+}
+.CMD img{display: block;}
+.CLBox .CMDLogo{margin:8px 0 9px 8px; float: left;}
+.CLBox .CMDTitle{
+	width:443px; /* 586px - 24px - 119px */
+	height: 30px;
+	font-size: 12px;
+	line-height: 30px;
+	float: left;
+	padding-left: 5px;
+	color:black;
+}
+.CMDTitle p{
+	margin:0;
+	padding: 0;
+}
+.CLBox .winMin{margin:14px 35px 15px 0; float: left;}
+.CLBox .winFull{margin:9px 36px 11px 0; float: left;}
+.CLBox .winClose{margin:9px 0 11px 0;}
+/*=============CMD 4 FUN==========*/
+
+.CLBoxB p.score{
+	position:absolute; bottom:0;
+}
+
+/*==========================Multimedia Knowledge==============*/
+/*==========================Video Montage======================*/
+
+#VMGroup{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+}
+.VMBox{
+	width:468.75px; /*=====800/1.6=====*/
+	height: 319.375px; /*=====725/1.6=====*/
+	padding: 68.75px 15.625px 65px 15.625px;/*=====100/1.6====25/1.6====104/1.6=====*/
+	background-image: url("../IMG/Film.png"); /* The image used */
+	background-color: rgba(255,255,255,0.4); /* Used if the image is unavailable */
+	background-position: center center; /* Center the image */
+	background-repeat: no-repeat; /* Do not repeat the image */
+	background-size: cover;
+	font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+}
+.VMBLabel{
+	font-size: 28px;
+	font-weight: bold;
+	text-align: center;
+}
+.VMBDescr{
+	font-size: 22px;
+}
+.VMBDescrS{
+	font-size: 18px;
+	margin-right: 2px;
+	margin-left: 2px;
+}
+/*=======================3D Modeling=========================*/
+#Group3D{
+	margin-top: 25px;
+}
+.wrapTriangularPrism {
+  width: 800px;
+  height: 340px;
+  position: relative;
+  /* perspective: 2700px; */
+  margin: auto;
+  font-family: Lucida Console, Lucida Sans Typewriter, monaco, Bitstream Vera Sans Mono, monospace;
+}
+
+#triangularPrism {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation-direction: normal;
+  transition: transform .6s ease-out;
+}
+
+#triangularPrism .side {
+  width: 800px;
+  height: 340px;
+  display: block;
+  position: absolute;
+  border: 2.7px solid dimgrey;
+  background: grey;
+  color: #fff;
+  text-align: center;
+  line-height: 16px;
+}
+
+.side.one {
+  -webkit-transform: rotateX(0deg) translateZ(98px);
+}
+
+.side.two {
+  -webkit-transform: rotateX(120deg) translateZ(98px);
+}
+
+.side.three {
+  -webkit-transform: rotateX(240deg) translateZ(98px);
+}
+
+
+.prismSide {
+  width: 799.2px;
+  height: 324px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.prismLeftSide {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 2.7px solid dimgrey;
+}
+
+.prismRightSide {
+  width: 70%;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.prismRightSide p {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.prismName {
+  height: 16px;
+  width: 100%;
+}
+
+.prismName p {
+  margin: 0 auto 0 auto;
+}
+
+.prismImages {
+  height: calc((100% / 2) - 42px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.prismImages img {
+  max-height: calc(100% - 10px);
+  max-width: calc(100% - 10px);
+}
+
+.prismScore {
+  height: 16px;
+  width: 100%;
+}
+
+.prismScore p {
+  margin: 0 auto 0 auto;
+}
+
+.rotateDiv img{
+	max-width:100%;
+	max-height:100%;
+	filter: invert(56%) sepia(0%) saturate(0%) hue-rotate(161deg) brightness(90%) contrast(89%);
+}
+.rotateDiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100px;
+}
+img.pixelArt{
+	image-rendering: pixelated;
+	image-rendering: -moz-crisp-edges;
+	image-rendering: crisp-edges;
+}
+img.roundCorners{
+	border-radius: 20px;
+}
+img.pushTextRight{
+	margin-right: 25px;
+}
+#recentWorks{
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	background-image: url(../IMG/Rocks.png);
+	color: white;
+	font-weight: bold;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+#recentWorks img{
+	height: auto;
+	width:60%;
+}
+#recentWorks hr.noticeBot{
+	border: 1px solid black;
+	margin-bottom: 50px;
+	width:60%;
+}
+#recentWorks hr.noticeTop{
+	border: 1px solid black;
+	margin-top: 50px;
+	width:60%;
+}
+#recentWorks br{
+	margin-bottom: 50px;
+}
+#recentWorks p.notice{
+	font-size: 10px;
+	line-height: 10px;
+}
+div#jam{
+	display:flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items:center;
+	width: 100%;
+	margin-bottom: 50px;
+}
+div#jam div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height:400px;
+	width: 40%;
+	margin-left:2.5%;
+	margin-right:2.5%;
+}
+.border{
+	border:1px solid black;
+}
+div#jam div img{
+	height: auto;
+	width:100%;
+}
+div#photoEdit{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+div#photoBubble{
+	background-image: url("../IMG/Message Bubble.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-right: 300px;
+	height: 274px;
+	width: 391px;
+	padding:50px;
+	padding-bottom: 150px;
+}
+.ignoreLabelStyleForCharacter{
+	margin-top:0!important;
+}
+.ratio-16-9,
+.ratio-16-10,
+.ratio-square {
+    display: block!important;
+    position: relative!important;
+    width: 100%!important;
+    height: 0!important;
+}
+
+.ratio-16-9 {
+    padding-top: 56.25%; /* This is your aspect-ratio */
+}
+
+.ratio-16-10 {
+    padding-top: 62.5%; /* This is your aspect-ratio */
+}
+
+.ratio-square {
+    padding-top: 100%; /* This is your aspect-ratio */
+}
+
+.ratio-inner {
+    display: block;
+    position: absolute;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
